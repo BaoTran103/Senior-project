@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+ <header>
+ 	<h1>Virtual Experiment</h1>
+ 	</header>
+
+<body>
+<form id="frm1" action="/action_page.php">
+<p>Select the Field:  
+
+<select name="FieldSelect" >
+  <option value="MagneticField">Magnetic Field</option>
+  <option value="ElectricField">Electric Field</option>
+  <option value="EM">Both Field</option>
+</select>
+</p>
+
+<p>Select a direction of the Field: 
+
+<select name="DirectionFieldSelect" >
+  <option value="+x">In +x direction</option>
+  <option value="-x">In -x direction</option>
+  <option value="+y">In +y direction</option>
+  <option value="-y">In -y direction</option>
+</select>
+</p>
+
+<div>
+	<p> Charge (q):  <input type="number" name="Charge" min="" max=""> (C)  </p>    
+	<p> Electric Filed (E): <input type="number" name="Electric Filed" min="" max=""> (V/m) </p> 
+	<p> Magnetic Feild (B): <input type="number" name="Magnetic Feild" min="" max=""> (Wb/m<sup>2</sup>) </p> 
+	<p> Initial Velocity (u<sub>0</sub>): <input type="number" name="Initial Velocity" min="0" max="">a<sub>x</sub> (m/s) </p> 
+	<p> Mass (m): <input type="number" name="Mass" min="0" max=""> (kg) </p> 
+</div>
+
+<div>
+        <input id="submit" type="submit" value="Enter">
+</div>
+</form>
+
+</body>
+</html>
